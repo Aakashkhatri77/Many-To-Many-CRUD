@@ -77,8 +77,8 @@ namespace Many_To_Many_CRUD.Controllers
         {
             ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Name");
             ViewBag.EmployeeId = new SelectList(db.Employees, "Id", "Name");
-/*            var employeeProjects = db.EmployeeProjects.Include(e => e.Employee).Include(e => e.Project).FirstOrDefault(m => m.Id == id);
-*/            return View();
+            var employeeProjects = db.EmployeeProjects.Include(e => e.Employee).Include(e => e.Project).FirstOrDefault(m => m.Id == id);
+            return View(employeeProjects);
         }
 
         // POST: EmployeeProjectController/Edit/5
@@ -88,6 +88,11 @@ namespace Many_To_Many_CRUD.Controllers
         {
             try
             {
+                    var _employeeProject = new EmployeeProject();
+                    _employeeProject.ProjectId = employeeProject.ProjectId;
+                    _employeeProject.EmployeeId = employeeProject.EmployeeId;
+                    db.EmployeeProjects.Update(employeeProject);
+                    db.SaveChanges();
                 
                 return RedirectToAction(nameof(Index));
             }
