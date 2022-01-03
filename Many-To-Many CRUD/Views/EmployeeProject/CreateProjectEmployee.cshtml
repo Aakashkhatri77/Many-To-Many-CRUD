@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "CreateProjectEmployee";
+}
+
+<h2>CreateProjectEmployee</h2>
+
+<form action="/EmployeeProject/CreateProjectEmployee" method="post">
+
+Project Name @Html.DropDownList("ProjectId", "")
+
+<ul style= "list-style-type:none;">
+    @foreach (var employee in ViewBag.Employee)
+    {
+        <li><input type="checkbox" name="EmployeeId" value="@employee.Id" /> @employee.Name</li>
+    }
+</ul>
+
+<input type="submit" value="Assign Project"/>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</form>

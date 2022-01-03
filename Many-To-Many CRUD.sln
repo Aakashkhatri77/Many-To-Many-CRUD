@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Many-To-Many CRUD", "Many-To-Many CRUD\Many-To-Many CRUD.csproj", "{F4CBC778-5F8F-46F0-95D0-82C33A2ED86B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4CBC778-5F8F-46F0-95D0-82C33A2ED86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CBC778-5F8F-46F0-95D0-82C33A2ED86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CBC778-5F8F-46F0-95D0-82C33A2ED86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CBC778-5F8F-46F0-95D0-82C33A2ED86B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DF92D93-360E-4448-AD00-88FF7FF21FDC}
+	EndGlobalSection
+EndGlobal
